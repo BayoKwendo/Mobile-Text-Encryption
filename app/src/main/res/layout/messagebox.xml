@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_marginTop="10dp"
+	android:orientation="vertical">
+	<android.support.v7.widget.LinearLayoutCompat
+		android:layout_width="match_parent"
+		android:padding="100dp"
+		android:id="@+id/layout"
+		android:gravity="center_vertical"
+		android:orientation="vertical"
+		android:layout_height="match_parent">
+		<Button android:layout_height="wrap_content"
+			android:id="@+id/btnNew"
+			android:background="@drawable/shape_urgent"
+			android:text="New Message"
+			android:layout_marginTop="30dp"
+			android:layout_width="match_parent">
+		</Button>
+
+
+		<Button
+			android:text="Inbox"
+			android:id="@+id/btnInbox"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="30dp"
+			android:background="@drawable/shape_urgent"
+			android:layout_width="match_parent">
+
+		</Button>
+
+		<Button android:text="Sent Box" android:id="@+id/btnSentBox"
+			android:layout_height="wrap_content"
+			android:background="@drawable/shape_urgent"
+			android:layout_marginTop="30dp"
+			android:layout_width="match_parent">
+
+		</Button>
+
+		<Button android:layout_height="wrap_content"
+			android:id="@+id/btnDraft"
+			android:background="@drawable/shape_urgent"
+			android:text="Draft"
+			android:layout_marginTop="30dp"
+			android:layout_width="match_parent">
+		</Button>
+
+	</android.support.v7.widget.LinearLayoutCompat>
+
+	<ListView android:layout_width="match_parent"
+		android:layout_weight="1"
+		android:layout_height="match_parent"
+		android:id="@+id/lvMsg">
+	</ListView>
+
+	<TextView
+		android:id="@+id/textView"
+		android:visibility="gone"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="hchcmvvmvngngjgjggjjgjjgvnhhh"
+		android:textSize="@dimen/main_text_size" />
+
+</LinearLayout>

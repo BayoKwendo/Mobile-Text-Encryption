@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/action_bar_horizontal_margin"
+    android:paddingRight="@dimen/action_bar_horizontal_margin">
+    
+    <View android:id="@+id/strut"
+        android:layout_width="0dp"
+        android:layout_height="0dp" 
+        android:layout_centerHorizontal="true"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="horizontal">
+    	
+	    <Button
+			android:id="@+id/decryptButton"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_marginLeft="0dp"
+			android:layout_marginTop="0dp"
+			android:background="@android:color/transparent"
+			android:textColor="@drawable/actionbar_button_text_color"
+			android:gravity="left|center_vertical"
+			android:text="@string/menu_decrypt_title"
+			android:textSize="@dimen/main_text_size"
+			android:onClick="onDecryptTapped" />
+
+	    <ImageButton
+	        android:id="@+id/shareImageButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:src="@drawable/share"
+	        android:contentDescription="@string/share_button_description"
+			android:onClick="onShareTapped"
+            android:background="@color/colorTransparent"/>
+	    
+	    <Button
+			android:id="@+id/encryptButton"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_marginLeft="0dp"
+			android:layout_marginTop="0dp"
+			android:background="@android:color/transparent"
+			android:textColor="@drawable/actionbar_button_text_color"
+			android:gravity="right|center_vertical"
+			android:text="@string/menu_encrypt_title"
+			android:textSize="@dimen/main_text_size"
+			android:onClick="onEncryptTapped" />
+    
+    </LinearLayout>
+    
+</RelativeLayout>

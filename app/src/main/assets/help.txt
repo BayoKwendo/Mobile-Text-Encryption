@@ -1,0 +1,5 @@
+Encrypts text messages.
+
+It uses Advanced Encryption Standard with a 256-bit key.
+
+
